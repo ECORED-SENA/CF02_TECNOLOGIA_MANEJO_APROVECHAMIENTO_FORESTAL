@@ -19,71 +19,39 @@ export default {
   },
   data: () => ({
     cuestionario: {
-      tema: 'Microcontroladores y sensores',
+      tema: 'Evaluación de conocimientos sobre caracterización ambiental y ordenamiento ecológico del territorio',
       titulo: 'Cuestionario',
       introduccion:
-        '<b>Objetivo:</b> evaluar la comprensión y el uso adecuado de las herramientas básicas en la ventana <em>Board</em> del <em>software</em> EAGLE.',
-      barajarPreguntas: false,
+        '<b>Objetivo:</b> evaluar los conocimientos adquiridos sobre biodiversidad, caracterización ambiental, suelos, cartografía, normativa ambiental y estrategias de intervención, mediante un cuestionario de selección múltiple que permita verificar la comprensión de los conceptos y procedimientos desarrollados en el componente formativo. ',
+      barajarPreguntas: true,
       titulo_aprobado: '¡BUEN TRABAJO!',
       titulo_reprobado: 'VUELVA A INTENTARLO',
       preguntas: [
         {
           id: 1,
           texto:
-            '¿Cuál es la función principal de la herramienta <em>Layer</em> en la ventana <em>Board</em>?',
+            '¿Qué nivel de biodiversidad describe las diferencias hereditarias entre individuos de una misma especie?',
           imagen: '@/assets/actividad/imagen1.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'tPlace',
-              esCorrecta: true,
-            },
-            {
-              id: 'b',
-              texto: 'bNames',
+              texto: 'Diversidad de especies de un territorio.',
               esCorrecta: false,
             },
             {
+              id: 'b',
+              texto: 'Diversidad genética entre individuos.',
+              esCorrecta: true,
+            },
+            {
               id: 'c',
-              texto: 'tStop',
+              texto: 'Diversidad de ecosistemas de una zona.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'bValues',
-              esCorrecta: false,
-            },
-          ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto:
-            'Lo sentimos, su respuesta no es la correcta. <em>Board</em> del <em>software</em> EAGLE.',
-        },
-        {
-          id: 2,
-          texto:
-            '¿Qué herramienta permite agregar texto en la ventana <em>Board</em>?',
-          imagen: '@/assets/actividad/imagen1.png',
-          barajarRespuestas: true,
-          opciones: [
-            {
-              id: 'a',
-              texto: 'tPlace',
-              esCorrecta: true,
-            },
-            {
-              id: 'b',
-              texto: 'bNames',
-              esCorrecta: false,
-            },
-            {
-              id: 'c',
-              texto: 'tStop',
-              esCorrecta: false,
-            },
-            {
-              id: 'd',
-              texto: 'bValues',
+              texto: 'Diversidad de hábitats de un paisaje.',
               esCorrecta: false,
             },
           ],
@@ -91,29 +59,61 @@ export default {
           mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
         },
         {
-          id: 3,
-          texto: '¿Para qué sirve la herramienta <em>Show</em> en EAGLE?',
+          id: 2,
+          texto:
+            '¿Cuál de las siguientes descripciones corresponde a la flora exótica?',
           imagen: '@/assets/actividad/imagen1.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'tPlace',
-              esCorrecta: true,
+              texto: 'Especie cultivada para el consumo humano.',
+              esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'bNames',
+              texto: 'Especie originaria de la región estudiada.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'tStop',
+              texto: 'Especie adaptada a condiciones de sequía.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'bValues',
+              texto: 'Especie introducida fuera de su área natural.',
+              esCorrecta: true,
+            },
+          ],
+          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+        },
+        {
+          id: 3,
+          texto:
+            '¿Qué técnica permite registrar los organismos que tocan o cruzan una línea trazada en un terreno natural?',
+          imagen: '@/assets/actividad/imagen1.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'Transectos trazados sobre el terreno.',
+              esCorrecta: true,
+            },
+            {
+              id: 'b',
+              texto: 'Cuadrantes delimitados sobre el suelo.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'Calicatas excavadas dentro del terreno.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Parcelas registradas en planos del área.',
               esCorrecta: false,
             },
           ],
@@ -123,28 +123,28 @@ export default {
         {
           id: 4,
           texto:
-            '¿Qué botón se utiliza para cambiar entre las ventanas <em>Schematic</em> y <em>Board</em>?',
+            '¿Qué característica de la estructura ecológica principal se relaciona con su capacidad para amortiguar perturbaciones ambientales, como las inundaciones?',
           imagen: '@/assets/actividad/imagen1.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'tPlace',
-              esCorrecta: true,
+              texto: 'Organización multiescalar del territorio.',
+              esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'bNames',
+              texto: 'Funcionamiento sistémico de las áreas.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'tStop',
-              esCorrecta: false,
+              texto: 'Resiliencia ante perturbaciones ambientales.',
+              esCorrecta: true,
             },
             {
               id: 'd',
-              texto: 'bValues',
+              texto: 'Provisión de servicios ecosistémicos.',
               esCorrecta: false,
             },
           ],
@@ -153,28 +153,29 @@ export default {
         },
         {
           id: 5,
-          texto: '¿Qué permite hacer la herramienta <em>Route</em>?',
-          imagen: '@/assets/actividad/imagen2.png',
+          texto:
+            '¿En qué fase de gestión de la estructura ecológica principal se clasifican las zonas según su valor ecosistémico y aptitud para la conservación, restauración o uso sostenible?',
+          imagen: '@/assets/actividad/imagen1.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'tPlace',
+              texto: 'Priorización de áreas para manejo ambiental.',
               esCorrecta: true,
             },
             {
               id: 'b',
-              texto: 'bNames',
+              texto: 'Identificación y diagnóstico del territorio.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'tStop',
+              texto: 'Evaluación de conectividad entre hábitats.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'bValues',
+              texto: 'Implementación y monitoreo de acciones.',
               esCorrecta: false,
             },
           ],
@@ -184,29 +185,29 @@ export default {
         {
           id: 6,
           texto:
-            '¿Qué función tiene la herramienta <em>Auto</em> en la ventana <em>Board</em>?',
+            '¿Qué horizonte del suelo se caracteriza por la pérdida de arcilla, hierro y materia orgánica mediante procesos de lavado?',
           imagen: '@/assets/actividad/imagen2.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'tPlace',
-              esCorrecta: true,
+              texto: 'Horizonte O, con acumulación orgánica.',
+              esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'bNames',
+              texto: 'Horizonte B, con acumulación de minerales.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'tStop',
+              texto: 'Horizonte C, con material parental.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'bValues',
-              esCorrecta: false,
+              texto: 'Horizonte E, con lavado de materiales.',
+              esCorrecta: true,
             },
           ],
           mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
@@ -215,28 +216,28 @@ export default {
         {
           id: 7,
           texto:
-            '¿Cuál es una recomendación al ubicar los componentes en la ventana <em>Board</em>?',
+            'Durante un aforo volumétrico, un recipiente de 24 litros tarda 4 segundos en llenarse. ¿Cuál es el caudal calculado mediante Q = V/t?',
           imagen: '@/assets/actividad/imagen2.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'tPlace',
-              esCorrecta: true,
-            },
-            {
-              id: 'b',
-              texto: 'bNames',
+              texto: '4 litros por segundo.',
               esCorrecta: false,
             },
             {
+              id: 'b',
+              texto: '6 litros por segundo.',
+              esCorrecta: true,
+            },
+            {
               id: 'c',
-              texto: 'tStop',
+              texto: '8 litros por segundo.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'bValues',
+              texto: '12 litros por segundo.',
               esCorrecta: false,
             },
           ],
@@ -246,28 +247,28 @@ export default {
         {
           id: 8,
           texto:
-            '¿Cuál de las siguientes capas se utiliza para añadir texto en el diseño?',
+            '¿Cuál de los siguientes conjuntos de datos permite identificar y ubicar una muestra durante su traslado al laboratorio?',
           imagen: '@/assets/actividad/imagen2.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'tPlace',
-              esCorrecta: true,
+              texto: 'Color del recipiente, marca y volumen.',
+              esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'bNames',
+              texto: 'Pendiente del terreno, textura y pH.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'tStop',
-              esCorrecta: false,
+              texto: 'Código de muestra, sitio y coordenadas.',
+              esCorrecta: true,
             },
             {
               id: 'd',
-              texto: 'bValues',
+              texto: 'Cobertura vegetal, relieve y drenaje.',
               esCorrecta: false,
             },
           ],
@@ -277,29 +278,29 @@ export default {
         {
           id: 9,
           texto:
-            'La herramienta <em>Text</em> en la ventana <em>Board</em> solo permite cambiar el color de las capas.',
-          imagen: '@/assets/actividad/imagen3.png',
+            '¿Qué instrumento se utiliza para determinar directamente el diámetro a la altura del pecho (DAP) de un árbol?',
+          imagen: '@/assets/actividad/imagen2.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'tPlace',
-              esCorrecta: true,
+              texto: 'Brújula para orientar el levantamiento.',
+              esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'bNames',
+              texto: 'Hipsómetro para determinar la altura.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'tStop',
+              texto: 'Molinete para determinar la velocidad.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'bValues',
-              esCorrecta: false,
+              texto: 'Forcípula para medir el diámetro del árbol.',
+              esCorrecta: true,
             },
           ],
           mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
@@ -308,28 +309,32 @@ export default {
         {
           id: 10,
           texto:
-            'La herramienta <em>Layer</em> permite seleccionar y editar capas para definir márgenes, pistas y componentes.',
-          imagen: '@/assets/actividad/imagen3.png',
+            'Según las responsabilidades de seguridad y salud en el trabajo, ¿qué actividad corresponde al empleador?',
+          imagen: '@/assets/actividad/imagen2.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'tPlace',
+              texto:
+                'Suministrar equipos de protección y capacitar al personal.',
               esCorrecta: true,
             },
             {
               id: 'b',
-              texto: 'bNames',
+              texto:
+                'Informar sobre peligros identificados durante las labores.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'tStop',
+              texto:
+                'Utilizar correctamente los equipos de seguridad recibidos.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'bValues',
+              texto:
+                'Participar en las capacitaciones de seguridad programadas.',
               esCorrecta: false,
             },
           ],
@@ -339,28 +344,28 @@ export default {
         {
           id: 11,
           texto:
-            'El botón "<em>BOARD</em>" en EAGLE solo sirve para borrar componentes en el diseño.',
+            '¿Qué técnica de análisis espacial permite cruzar información cartográfica sobre suelos, pendientes, cobertura vegetal e hidrología?',
           imagen: '@/assets/actividad/imagen3.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'tPlace',
-              esCorrecta: true,
+              texto: 'Interpolación de variables ambientales.',
+              esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'bNames',
+              texto: 'Delimitación de áreas de influencia.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'tStop',
-              esCorrecta: false,
+              texto: 'Superposición de capas temáticas.',
+              esCorrecta: true,
             },
             {
               id: 'd',
-              texto: 'bValues',
+              texto: 'Estimación mediante índices espectrales.',
               esCorrecta: false,
             },
           ],
@@ -370,28 +375,28 @@ export default {
         {
           id: 12,
           texto:
-            'La herramienta <em>Show</em> permite resaltar conexiones para facilitar la identificación de redes.',
+            '¿Qué tipo de coordenadas permite representar posiciones mediante valores X y Y expresados en metros?',
           imagen: '@/assets/actividad/imagen3.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'tPlace',
-              esCorrecta: true,
-            },
-            {
-              id: 'b',
-              texto: 'bNames',
+              texto: 'Coordenadas geográficas expresadas en grados.',
               esCorrecta: false,
             },
             {
+              id: 'b',
+              texto: 'Coordenadas proyectadas expresadas en metros.',
+              esCorrecta: true,
+            },
+            {
               id: 'c',
-              texto: 'tStop',
+              texto: 'Coordenadas geográficas expresadas en minutos.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'bValues',
+              texto: 'Coordenadas geográficas expresadas en segundos.',
               esCorrecta: false,
             },
           ],
@@ -401,28 +406,28 @@ export default {
         {
           id: 13,
           texto:
-            'La función <em>Auto</em> se utiliza para enrutado automático en la ventana <em>Board</em>.',
-          imagen: '@/assets/actividad/imagen4.png',
+            'Una intervención ambiental busca disminuir la intensidad de un impacto que no pudo evitarse. ¿A qué nivel de la jerarquía de impacto corresponde?',
+          imagen: '@/assets/actividad/imagen3.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'tPlace',
-              esCorrecta: true,
-            },
-            {
-              id: 'b',
-              texto: 'bNames',
+              texto: 'Prevención de los efectos ambientales.',
               esCorrecta: false,
             },
             {
+              id: 'b',
+              texto: 'Mitigación de los impactos previstos.',
+              esCorrecta: true,
+            },
+            {
               id: 'c',
-              texto: 'tStop',
+              texto: 'Corrección de los daños producidos.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'bValues',
+              texto: 'Compensación de los efectos residuales.',
               esCorrecta: false,
             },
           ],
@@ -432,28 +437,28 @@ export default {
         {
           id: 14,
           texto:
-            'La herramienta <em>Route</em> en la ventana <em>Board</em> ajusta automáticamente todas las pistas del diseño.',
-          imagen: '@/assets/actividad/imagen4.png',
+            '¿A qué categoría pertenecen los acuerdos voluntarios de producción limpia (APL) y los pagos por servicios ambientales (PSA) en el contenido del componente?',
+          imagen: '@/assets/actividad/imagen3.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'tPlace',
-              esCorrecta: true,
+              texto: 'Criterios para analizar la calidad del agua.',
+              esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'bNames',
+              texto: 'Categorías destinadas a protección estricta.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'tStop',
-              esCorrecta: false,
+              texto: 'Técnicas para adoptar prácticas ambientales.',
+              esCorrecta: true,
             },
             {
               id: 'd',
-              texto: 'bValues',
+              texto: 'Métodos para medir dimensiones del terreno.',
               esCorrecta: false,
             },
           ],
@@ -463,29 +468,184 @@ export default {
         {
           id: 15,
           texto:
-            'Es recomendable organizar los componentes en bloques funcionales como transformación y filtrado en la ventana <em>Board</em>.',
+            '¿Qué procedimiento corresponde a un método indirecto para estimar cargas contaminantes?',
+          imagen: '@/assets/actividad/imagen3.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'Registrar directamente el caudal de descarga.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'Realizar aforos y muestreos en el terreno.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'Efectuar balances de materia con mediciones.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Aplicar factores sectoriales de emisión o vertido.',
+              esCorrecta: true,
+            },
+          ],
+          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+        },
+        {
+          id: 16,
+          texto:
+            '¿Cuál es la relación básica utilizada para estimar la tasa de carga contaminante en una descarga con caudal medible, considerando unidades compatibles?',
           imagen: '@/assets/actividad/imagen4.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'tPlace',
+              texto: 'Concentración × caudal.',
               esCorrecta: true,
             },
             {
               id: 'b',
-              texto: 'bNames',
+              texto: 'Concentración ÷ caudal.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'tStop',
+              texto: 'Concentración + caudal.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'bValues',
+              texto: 'Concentración − caudal.',
               esCorrecta: false,
+            },
+          ],
+          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+        },
+        {
+          id: 17,
+          texto:
+            '¿Qué disposición colombiana establece parámetros y valores límites máximos permisibles para vertimientos puntuales a cuerpos de aguas superficiales y sistemas de alcantarillado público?',
+          imagen: '@/assets/actividad/imagen4.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'Resolución 883 de 2018.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'Resolución 699 de 2021.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'Resolución 631 de 2015.',
+              esCorrecta: true,
+            },
+            {
+              id: 'd',
+              texto: 'Decreto 1076 de 2015.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+        },
+        {
+          id: 18,
+          texto:
+            '¿Qué estudio se requiere para solicitar una licencia ambiental y evaluar los impactos abióticos, bióticos y socioeconómicos de un proyecto?',
+          imagen: '@/assets/actividad/imagen4.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'Informe de caudales y aforos.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'Estudio de impacto ambiental.',
+              esCorrecta: true,
+            },
+            {
+              id: 'c',
+              texto: 'Inventario de muestras de suelo.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Registro de parámetros del GPS.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+        },
+        {
+          id: 19,
+          texto:
+            '¿Cómo se organiza la información geográfica en el modelo de datos ráster de un sistema de información geográfica (SIG)?',
+          imagen: '@/assets/actividad/imagen4.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'Matriz de celdas o píxeles espaciales.',
+              esCorrecta: true,
+            },
+            {
+              id: 'b',
+              texto: 'Conjunto de líneas de un levantamiento.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'Base de coordenadas de un receptor GNSS.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Red de polígonos digitalizados en un mapa.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+        },
+        {
+          id: 20,
+          texto:
+            'En la clasificación cartográfica desarrollada en el componente, ¿cómo se categoriza una escala de 1:50.000?',
+          imagen: '@/assets/actividad/imagen4.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'Escala grande de alto detalle.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'Escala pequeña de detalle general.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'Escala topográfica de detalle local.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Escala mediana de detalle moderado.',
+              esCorrecta: true,
             },
           ],
           mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
