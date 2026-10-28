@@ -1,1 +1,2 @@
-module.exports = 'Ecored Base PKG'
+module.exports =
+  'Caracterización ambiental y ordenamiento ecológico del territorio'

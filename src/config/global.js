@@ -1,17 +1,22 @@
 export default {
   global: {
-    Name: 'Nombre del recurso educativo',
-    Description: 'Descripción del RED',
-    imagenBannerPrincipal: '@/assets/curso/portada/banner-principal.svg',
+    Name: 'Caracterización ambiental y ordenamiento ecológico del territorio',
+    Description:
+      'Este componente aborda la caracterización biofísica y socioambiental del territorio mediante el reconocimiento de la biodiversidad, el muestreo de suelo y agua y el uso de herramientas cartográficas. Integra criterios de conectividad ecológica, capacidad de carga y normativa ambiental para orientar decisiones de conservación, manejo sostenible y ordenamiento del territorio en el contexto del desarrollo de sistemas agroforestales. ',
+    imagenBannerPrincipal: '@/assets/curso/portada/banner-principal.png',
     fondoBannerPrincipal: '@/assets/curso/portada/fondo-banner-principal.png',
     imagenesDecorativasBanner: [
       {
         clases: ['banner-principal-decorativo-1', 'd-none', 'd-lg-block'],
-        imagen: '@/assets/curso/portada/banner-principal-decorativo-1.svg',
+        imagen: '@/assets/curso/portada/banner-principal-decorativo-1.png',
       },
       {
         clases: ['banner-principal-decorativo-2', 'd-none', 'd-lg-block'],
-        imagen: '@/assets/curso/portada/banner-principal-decorativo-2.svg',
+        imagen: '@/assets/curso/portada/banner-principal-decorativo-2.png',
+      },
+      {
+        clases: ['banner-principal-decorativo-3', 'd-none', 'd-lg-block'],
+        imagen: '@/assets/curso/portada/banner-principal-decorativo-3.png',
       },
     ],
   },
@@ -31,27 +36,71 @@ export default {
       {
         nombreRuta: 'tema1',
         numero: '1',
-        titulo: 'Tema 1',
+        titulo:
+          'Caracterización ambiental, muestreo de campo y ordenamiento ecológico del territorio',
         desarrolloContenidos: true,
         subMenu: [
           {
             numero: '1.1',
-            titulo: 'Subtema 1',
+            titulo: 'Biodiversidad: flora y fauna',
             hash: 't_1_1',
+          },
+          {
+            numero: '1.2',
+            titulo: 'Estructura ecológica principal (EEP)',
+            hash: 't_1_2',
+          },
+          {
+            numero: '1.3',
+            titulo: 'Suelos',
+            hash: 't_1_3',
+          },
+          {
+            numero: '1.4',
+            titulo: 'Instrumental de precisión	',
+            hash: 't_1_4',
+          },
+          {
+            numero: '1.5',
+            titulo: 'Normativa sobre seguridad y salud en el trabajo (SST)',
+            hash: 't_1_5',
           },
         ],
       },
       {
         nombreRuta: 'tema2',
         numero: '2',
-        titulo: 'Tema 2',
+        titulo:
+          'Cartografía, interpretación espacial y gestión de intervenciones ambientales',
         desarrolloContenidos: true,
-      },
-      {
-        nombreRuta: 'tema3',
-        numero: '3',
-        titulo: 'Tema 3',
-        desarrolloContenidos: true,
+        subMenu: [
+          {
+            numero: '2.1',
+            titulo: 'Metodologías de interpretación ambiental	',
+            hash: 't_2_1',
+          },
+          {
+            numero: '2.2',
+            titulo: 'Estrategias de intervención ambiental',
+            hash: 't_2_2',
+          },
+          {
+            numero: '2.3',
+            titulo: 'Estimación de cargas contaminantes y marco normativo',
+            hash: 't_2_3',
+          },
+          {
+            numero: '2.4',
+            titulo: 'Límites Máximos Permisibles de Vertimientos',
+            hash: 't_2_4',
+          },
+          {
+            numero: '2.5',
+            titulo:
+              'Cartografía y herramientas de sistemas de información geográfica (SIG)',
+            hash: 't_2_5',
+          },
+        ],
       },
     ],
     subMenu: [
